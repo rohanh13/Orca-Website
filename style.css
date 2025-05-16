@@ -165,10 +165,10 @@ h2 {
 }
 
 .workflow-image {
-  display: flex;
+  display: block;
   margin: 40px auto;
   max-width: 85%;
-  height: 85%;
+  height: auto;
 }
 
 .para5 {
