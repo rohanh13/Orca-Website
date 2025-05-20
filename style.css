@@ -276,6 +276,13 @@ h2 {
   .navbar.hidden {
   top: -100px; /* pushes navbar out of view */
   }
+
+  .nav-logo {
+    font-size: 2rem;         /* smaller font size for mobile */
+    line-height: 1.4;        /* more spacing between lines */
+    word-break: break-word;  /* make sure long words wrap */
+  }
+
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -296,7 +303,7 @@ h2 {
   }
 
   body, .body1 {
-    padding-top: 100px; /* or adjust based on actual navbar height on mobile */
+    padding-top: 50px; /* or adjust based on actual navbar height on mobile */
   }
 
   .body1 h1,
