@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -265,7 +271,7 @@ h2 {
   }
 
   .graph-image {
-    width: 80%;
+    width: 50%;
   }
 
    h1 {
@@ -279,14 +285,8 @@ h2 {
     line-height: 1.4;
   }
 
-  .para4 {
-    font-size: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .founders-content-wrapper {
-    flex-direction: column;
+    grid-template-columns: 1fr; /* single column on mobile */
     padding: 0 20px;
   }
 
@@ -346,8 +346,9 @@ h2 {
   }
 
   .para4 {
-    font-size: 22px;
-    text-align: left;
+    font-size: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .para5 {
