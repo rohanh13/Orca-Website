@@ -66,16 +66,6 @@ body {
   padding-top: 50px;
 }
 
-.body1, .body2, .body3 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 .body1 {
   background-color: #1f1f1f;
   font-family: 'Poppins',sans-serif;
@@ -337,6 +327,16 @@ h2 {
     font-size: large;
     padding-top: 60px;
   }
+
+  .body1, .body2, .body3 {
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
   .para1,
   .para2,
