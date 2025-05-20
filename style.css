@@ -266,8 +266,16 @@ h2 {
     height: auto;
     flex-wrap: nowrap;
     padding: 0 40px;
+    transition: top 0.3s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
   }
 
+  .navbar.hidden {
+  top: -100px; /* pushes navbar out of view */
+  }
   .nav-links {
     display: flex;
     flex-direction: column;
