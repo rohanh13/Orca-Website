@@ -294,6 +294,8 @@ h2 {
 
   .nav-links a {
     margin: 20px 0;
+    line-height: 1.4;        /* more spacing between lines */
+    word-break: break-word;  /* make sure long words wrap */
   }
 
   /* Body & headings */

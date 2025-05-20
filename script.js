@@ -7,7 +7,7 @@ window.addEventListener('scroll', function () {
   if (window.innerWidth <= 600) { // mobile only
     if (currentScroll > lastScrollTop) {
       // scrolling down
-      navbar.style.top = '-200px';
+      navbar.style.top = '-240px';
     } else {
       // scrolling up
       navbar.style.top = '0';
