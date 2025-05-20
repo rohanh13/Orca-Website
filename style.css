@@ -268,7 +268,7 @@ h2 {
   .content-wrapper {
     justify-content: center; /* center the images horizontally */
     gap: 30px;               /* bigger gap between the two images */
-    padding: 20px 10px 40px; /* more padding bottom for space below images */
+    padding: 20px 10px; /* more padding bottom for space below images */
   }
 
   .graph-column {
@@ -346,7 +346,22 @@ h2 {
   padding-right: 20px;
   box-sizing: border-box;
   text-align: center;
-}
+  }  
+
+  .body1 {
+    padding-bottom: 0px; /* reduce bottom padding */
+    margin-bottom: 0; /* just in case there's margin */
+  }
+
+  .body2 {
+    padding-top: 10px;  /* reduce top padding */
+    margin-top: 0;
+  }
+
+  .body3 {
+    padding-top: 20px;  /* reduce top padding */
+    margin-top: 0;
+  }
 
   .para1,
   .para2,
