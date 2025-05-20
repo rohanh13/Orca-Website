@@ -267,6 +267,27 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .founders-content-wrapper {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .content-wrapper2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .founder-photo {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .founder-info h3,
+  .founder-info p {
+    text-align: center;
+  }
 }
 
 .footer-bar {
