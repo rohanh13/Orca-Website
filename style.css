@@ -266,12 +266,21 @@ h2 {
   }
   
   .content-wrapper {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; /* center the images horizontally */
+    gap: 30px;               /* bigger gap between the two images */
+    padding: 20px 10px 40px; /* more padding bottom for space below images */
+  }
+
+  .graph-column {
+    flex-direction: row;     /* row layout for side-by-side images */
+    gap: 30px;               /* bigger gap between images */
+    flex-shrink: 0;
   }
 
   .graph-image {
-    width: 50%;
+    width: 45%;              /* take almost half width each */
+    height: auto;            /* maintain aspect ratio */
+    max-width: none;
   }
 
    h1 {
@@ -316,6 +325,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 20px;
     margin-top: 10px;
   }
 
@@ -341,12 +351,12 @@ h2 {
   .para1,
   .para2,
   .para3 {
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 15px;
   }
 
   .para4 {
-    font-size: 28px;
+    font-size: 24px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -354,11 +364,6 @@ h2 {
   .para5 {
     font-size: 28px;
     padding: 0 15px;
-  }
-
-   .graph-image {
-    width: 90%;
-    height: auto;
   }
 
   .workflow-image {
