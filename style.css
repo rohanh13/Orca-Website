@@ -1,3 +1,18 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -21,7 +36,7 @@ html {
 /* Logo section */
 .nav-logo {
   color: #009ee1;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -29,8 +44,8 @@ html {
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 30px;
-  font-size: 18px;
+  margin-left: 50px;
+  font-size: 24px;
   transition: color 0.3s ease;
 }
 
@@ -200,6 +215,7 @@ h2 {
 .founder-photo {
   width: 50%; /* or whatever size fits */
   height: auto;
+  align-items: flex-start;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -258,12 +274,10 @@ h2 {
   color: #ffffff;             /* white text */
   padding: 20px 30px;
   text-align: center;
-  position: relative;
   bottom: 0;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
 }
 
 .footer-bar a {

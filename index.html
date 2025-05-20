@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Orca Medical Technology</title>
@@ -6,112 +6,106 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<nav class="navbar">
-  <div class="nav-logo">Orca</div>
-  <div class="nav-links">
-    <a href="#para4">Download</a>
-    <a href="#para5">Who We Are</a>
-    <a href="#contact">Register / Log In</a>
-  </div>
-</nav>
-
 <body>
-  <div class="body1">
-  <h1>Orca Medical Technology</h1>
-  <h2>A Self-Diagnosis Tool for Non-Urgent Care</h2>
-  
+  <div class="wrapper">
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">Orca</div>
+      <div class="nav-links">
+        <a href="#para4">Download</a>
+        <a href="#para5">Who We Are</a>
+        <a href="#contact">Register / Log In</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <div class="body1">
+        <h1>Orca Medical Technology</h1>
+        <h2>A Self-Diagnosis Tool for Non-Urgent Care</h2>
+
+        <div class="content-wrapper">
+          <img src="images/without-family-phys-4.PNG" alt="graph1" class="graph-image">
+          <img src="images/avg wait times2.png" alt="graph2" class="graph-image">
+
+          <div class="text-box">
+            <p class="para1">In Canada, 1 in 10 patients with non-urgent ailments will wait over 8 hours in an Emergency Department (ED).</p>
+            <p class="para2">A further <span class="bolded">half</span> of all non-urgent patients will wait over 3 hours.</p>
+            <p class="para3">As a result of the long wait times, patients with non-life-threatening ailments may wish to self-diagnose using online tools (WebMD, ChatGPT, etc.). However, these tools are not based on the advice of medical doctors; rather, they are based on online publishings and may not always be accurate.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="body2">
+        <p class="para4" id="para4">
+          Using the expertise of medical professionals, residents, and clinical students, 
+          <span class="bluecolor"><span class="bolded">Orca</span></span> aims to provide 
+          <span class="bolded">a reliable self-diagnosis tool for patients with non-life-threatening injuries or ailments.</span>
+        </p>
+        <img src="images/Orca App Flow2.png" alt="workflow" class="workflow-image" id="workflow-image">
+      </div>
+
+      <div class="body3">
+        <p class="para5" id="para5"><span class="bolded">Who We Are</span></p>
+
+        <div class="founders-content-wrapper">
+          <div class="content-wrapper2">
+            <img src="images/rohan.PNG" alt="Founder 1" class="founder-photo">
+            <div class="founder-info">
+              <h3>Rohan Hundal</h3>
+              <p>Graduated with a BSc. Kinesiology from McGill University.</p>
+              <p>Incoming medical student at the University of Limerick (M1)</p>
+            </div>
+          </div>
+
+          <div class="content-wrapper2">
+            <img src="images/jaiten.png" alt="Founder 2" class="founder-photo">
+            <div class="founder-info">
+              <h3>Jaiten Kang</h3>
+              <p>Graduating student with BSc. Computer Science at McGill University</p>
+              <p>3 years spent in supplemental Information Technology roles</p>
+            </div>
+          </div>
+
+          <div class="content-wrapper2">
+            <img src="images/unknown.PNG" alt="Founder 3" class="founder-photo">
+            <div class="founder-info">
+              <h3>Arjun Chehil</h3>
+              <p>Current medical student in clinical rotations at the Royal College of Surgeons in Ireland (M4)</p>
+              <p>Experienced clinical medical researcher</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fade Effect Script -->
+      <div class="bottom-fade"></div>
+      <script>
+        const fade = document.querySelector('.bottom-fade');
+        window.addEventListener('scroll', () => {
+          const scrollTop = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight;
+          const winHeight = window.innerHeight;
+          const scrollBottom = scrollTop + winHeight;
+          const distanceFromBottom = docHeight - scrollBottom;
+
+          fade.style.opacity = distanceFromBottom < 150 ? distanceFromBottom / 150 : 1;
+        });
+      </script>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+      <div class="footer-content">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/legal.html">Legal</a>
+      </div>
+    </footer>
+
+  </div> <!-- end of wrapper -->
+
   <script src="script.js"></script>
-
-  <div class="content-wrapper">
-  <img src="images/without-family-phys-4.png" alt="graph1" class="graph-image">
-  <img src="images/avg wait times2.png" alt="graph2" class="graph-image">
-
-  <div class="text-box">
-    <p class="para1">
-      In Canada, 1 in 10 patients with non-urgent ailments will wait over 8 hours in an Emergency Department (ED).
-    </p>
-    <p class="para2">
-      A further <span class="bolded">half</span> of all non-urgent patients will wait over 3 hours.
-    </p>
-    <p class="para3">
-      As a result of the long wait times, patients with non-life-threatening ailments may wish to self-diagnose using online tools (WebMD, ChatGPT, etc.). However, these tools are not based on the advice of medical doctors; rather, they are based on online publishings and may not always be accurate.
-    </p>
-  </div>
-</div>
-
-<div class="body2">
-  <p class="para4" id="para4">
-    Using the expertise of medical professionals, residents, and clinical students, 
-    <span class="bluecolor"><span class="bolded">Orca</span></span> aims to provide 
-    <span class="bolded">a reliable self-diagnosis tool for patients with non-life-threatening injuries or ailments.</span>
-  </p>
-
-  <img src="images/Orca App Flow2.png" alt="workflow" class="workflow-image" id="workflow-image">
-</div>
-
-<div class="body3">
-  <p class="para5" id="para5">
-    <span class="bolded">Who We Are</span>
-  </p>
-
-  <div class="founders-content-wrapper">
-  <div class="content-wrapper2">
-    <img src="images/rohan.PNG" alt="Founder 1" class="founder-photo">
-    <div class="founder-info">
-      <h3>Rohan Hundal</h3>
-      <p>Graduated with a BSc. Kinesiology from McGill University.</p>
-      <p>Incoming medical student at the University of Limerick (M1)</p>
-    </div>
-  </div>
-
-  <div class="content-wrapper2">
-    <img src="images/jaiten.png" alt="Founder 2" class="founder-photo">
-    <div class="founder-info">
-      <h3>Jaiten Kang</h3>
-      <p>Graduating student with BSc. Computer Science at McGill University</p>
-      <p>3 years spent in supplemental Information Technology roles</p>
-    </div>
-  </div>
-
-  <div class="content-wrapper2">
-    <img src="images/unknown.PNG" alt="Founder 3" class="founder-photo">
-    <div class="founder-info">
-      <h3>Arjun Chehil</h3>
-      <p>Current medical student in clinical rotations at the Royal College of Surgeons in Ireland (M4)</p>
-      <p>Experienced clinical medical researcher</p>
-    </div>
-  </div>
-</div>
-</div>
-
-<footer class="footer-bar">
-  <div class="footer-content">
-    <a href="/privacy-policy.html">Privacy Policy</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/legal.html">Legal</a>
-  </div>
-</footer>
-
-  <div class="bottom-fade"></div>
-  <script>
-  const fade = document.querySelector('.bottom-fade');
-
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight;
-    const winHeight = window.innerHeight;
-    const scrollBottom = scrollTop + winHeight;
-
-    const distanceFromBottom = docHeight - scrollBottom;
-
-    // If user is near bottom, reduce opacity gradually
-    if (distanceFromBottom < 150) {
-      fade.style.opacity = distanceFromBottom / 150; // from 1 to 0
-    } else {
-      fade.style.opacity = 1;
-    }
-  });
-</script>
 </body>
 </html>
-
