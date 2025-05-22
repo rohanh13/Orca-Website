@@ -41,9 +41,21 @@ html {
 
 /* Logo section */
 .nav-logo {
+  display: flex;
+  align-items: center;
   color: #009ee1;
   font-size: 36px;
   font-weight: bold;
+}
+
+.nav-brand-text {
+  padding-left: 10px;
+}
+
+.nav-logo-img {
+  width: 40px; /* control size directly */
+  height: auto;
+  margin-right: 10px; /* spacing between logo and text */
 }
 
 /* Nav links */
@@ -80,13 +92,14 @@ html {
 
 .background-video {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
+  transform: translate(-50%, -60%);
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.5); /* Optional darkening for contrast */
+  filter: brightness(0.3); 
 }
 
 .banner-content {

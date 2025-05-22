@@ -1,6 +1,12 @@
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 
+window.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar');
+    const body = document.body;
+    body.style.paddingTop = navbar.offsetHeight + 'px';
+  });
+  
 window.addEventListener('scroll', function () {
   const currentScroll = window.scrollY;
 
