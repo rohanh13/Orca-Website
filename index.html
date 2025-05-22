@@ -1,18 +1,19 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Orca Medical Technology</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <div class="wrapper">
-    
+
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-logo">Orca MedTech</div>
+      <button class="burger" aria-label="Toggle menu">&#9776;</button>
       <div class="nav-links">
         <a href="#para4">Download</a>
         <a href="#para5">Who We Are</a>
@@ -21,22 +22,37 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
-      <div class="body1">
+  <main>
+    <section class="video-banner">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="images/testvid1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="banner-content">
         <h1>The Orca App</h1>
         <h2>A Self-Diagnosis Tool for Non-Urgent Care</h2>
+      </div>
+    </section>
 
-        <div class="content-wrapper">
-          <img src="images/without-family-phys-4.png" alt="graph1" class="graph-image">
-          <img src="images/avg wait times2.png" alt="graph2" class="graph-image">
+    <!-- Main Body Content -->
+    <div class="body1">
+      <div class="content-wrapper">
+        <img src="images/without-family-phys-4.png" alt="graph1" class="graph-image" />
+        <img src="images/avg wait times2.png" alt="graph2" class="graph-image" />
 
-          <div class="text-box">
-            <p class="para1">In Canada, 1 in 10 patients with non-urgent ailments will wait over 8 hours in an Emergency Department (ED).</p>
-            <p class="para2">A further <span class="bolded">half</span> of all non-urgent patients will wait over 3 hours.</p>
-            <p class="para3">As a result of the long wait times, patients with non-life-threatening ailments may wish to self-diagnose using online tools (WebMD, ChatGPT, etc.). However, these tools are not based on the advice of medical doctors; rather, they are based on online publishings and may not always be accurate.</p>
-          </div>
+        <div class="text-box">
+          <p class="para1">
+            In Canada, 1 in 10 patients with non-urgent ailments will wait over 8 hours in an Emergency Department (ED).
+          </p>
+          <p class="para2">
+            A further <span class="bolded">half</span> of all non-urgent patients will wait over 3 hours.
+          </p>
+          <p class="para3">
+            As a result of the long wait times, patients with non-life-threatening ailments may wish to self-diagnose using online tools (WebMD, ChatGPT, etc.). However, these tools are not based on the advice of medical doctors; rather, they are based on online publishings and may not always be accurate.
+          </p>
         </div>
       </div>
+    </div>
 
       <div class="body2">
         <p class="para4" id="para4">
@@ -44,7 +60,7 @@
           <span class="bluecolor"><span class="bolded">Orca</span></span> aims to provide 
           <span class="bolded">a reliable self-diagnosis tool for patients with non-life-threatening injuries or ailments.</span>
         </p>
-        <img src="images/Orca App Flow2.png" alt="workflow" class="workflow-image" id="workflow-image">
+        <img src="images/Orca App Flow2.png" alt="workflow" class="workflow-image" id="workflow-image" />
       </div>
 
       <div class="body3">
@@ -52,7 +68,7 @@
 
         <div class="founders-content-wrapper">
           <div class="content-wrapper2">
-            <img src="images/rohan.PNG" alt="Founder 1" class="founder-photo">
+            <img src="images/rohan.PNG" alt="Founder 1" class="founder-photo" />
             <div class="founder-info">
               <h3>Rohan Hundal</h3>
               <p>Graduated with a BSc. Kinesiology from McGill University.</p>
@@ -61,7 +77,7 @@
           </div>
 
           <div class="content-wrapper2">
-            <img src="images/jaiten.png" alt="Founder 2" class="founder-photo">
+            <img src="images/jaiten.png" alt="Founder 2" class="founder-photo" />
             <div class="founder-info">
               <h3>Jaiten Kang</h3>
               <p>Graduating student with BSc. Computer Science at McGill University</p>
@@ -70,7 +86,7 @@
           </div>
 
           <div class="content-wrapper2">
-            <img src="images/unknown.PNG" alt="Founder 3" class="founder-photo">
+            <img src="images/unknown.PNG" alt="Founder 3" class="founder-photo" />
             <div class="founder-info">
               <h3>Arjun Chehil</h3>
               <p>Current medical student in clinical rotations at the Royal College of Surgeons in Ireland (M4)</p>
@@ -106,6 +122,16 @@
     </footer>
 
   </div> <!-- end of wrapper -->
+
+  <!-- Burger Menu Script -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>
