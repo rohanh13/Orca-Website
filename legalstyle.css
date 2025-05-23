@@ -111,10 +111,10 @@ body {
 /* Body Paragraph */
 .legalpara2,
 .legalpara3,
-.legalpara4
+.legalpara4,
 .legalpara5,
 .legalpara6,
-.legalpara7
+.legalpara7,
 .legalpara8,
 .legalpara9,
 .legalpara10,
@@ -168,9 +168,16 @@ body {
   }
 
   /* Paragraphs inside body sections */
-  .legalpara1,
   .legalpara2,
-  .legalpara3 {
+  .legalpara3,
+  .legalpara4,
+  .legalpara5,
+  .legalpara6,
+  .legalpara7,
+  .legalpara8,
+  .legalpara9,
+  .legalpara10,
+  .legalpara11 {
     font-size: 80%;
     padding: 0 15px;
     padding-bottom: 10px;
