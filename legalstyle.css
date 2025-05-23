@@ -94,13 +94,13 @@ body {
 }
 
 /* Privacy Policy Page Container */
-.contact-container {
+.legal-container {
   flex: 1;
   padding: 30px 20px;
 }
 
 /* Heading */
-.contactpara1 {
+.legalpara1 {
   font-size: 36px;
   font-family: 'Poppins',sans-serif;
   font-weight: bold;
@@ -109,7 +109,16 @@ body {
 }
 
 /* Body Paragraph */
-.contactpara2 {
+.legalpara2,
+.legalpara3,
+.legalpara4
+.legalpara5,
+.legalpara6,
+.legalpara7
+.legalpara8,
+.legalpara9,
+.legalpara10,
+.legalpara11 {
   font-size: 24px;
   padding-top: 10px;
   width: 60%;
@@ -118,21 +127,9 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
   line-height: 1.6;
-  text-align: center; /* Optional: centers the text inside */
+  text-align: left; /* Optional: centers the text inside */
 }
 
-.contactpara3 {
-  font-size: 24px;
-  padding-top: 10px;
-  width: 60%;
-  margin: 0 auto; /* This centers block elements horizontally */
-  font-weight: normal;
-  font-style: italic;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  line-height: 1.6;
-  text-align: center; /* Optional: centers the text inside */
-}
 
 @media (max-width: 600px) {
    .burger {
@@ -171,9 +168,9 @@ body {
   }
 
   /* Paragraphs inside body sections */
-  .contactpara1,
-  .contactpara2,
-  .contactpara3 {
+  .legalpara1,
+  .legalpara2,
+  .legalpara3 {
     font-size: 80%;
     padding: 0 15px;
     padding-bottom: 10px;
