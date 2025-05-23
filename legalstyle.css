@@ -130,6 +130,19 @@ body {
   text-align: left; /* Optional: centers the text inside */
 }
 
+.legapara12 {
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 10px;
+  width: 60%;
+  margin: 0 auto; /* This centers block elements horizontally */
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+}
+
 
 @media (max-width: 600px) {
    .burger {
@@ -177,7 +190,8 @@ body {
   .legalpara8,
   .legalpara9,
   .legalpara10,
-  .legalpara11 {
+  .legalpara11,
+  .legalpara12 {
     font-size: 80%;
     padding: 0 15px;
     padding-bottom: 10px;
