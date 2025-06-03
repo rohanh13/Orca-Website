@@ -263,7 +263,16 @@ h2 {
   margin-bottom: 20px;
 }
 
-.founders-content-wrapper {
+.founders-content-wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; /* space between each founder block */
+  margin-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.founders-content-wrapper2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px; /* space between each founder block */
