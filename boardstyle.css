@@ -121,8 +121,8 @@ html {
 /* BOARD MEMBER PROFILES */
 .founders-content-wrapper1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px; /* space between each founder block */
+  grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
+  gap: 40px;
   margin-top: 70px;
   padding-left: 60px;
   padding-right: 60px;
