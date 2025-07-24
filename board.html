@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orca Medical Technology</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="boardstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img class="nav-logo-img" src="images/logo.png" alt="Logo">
+          <span class="nav-brand-text">Orca MedTech</span>
+        </div>
+
+        <button class="burger" aria-label="Toggle menu">&#9776;</button>
+
+        <div class="nav-links">
+          <a href="/board.html">Our Board</a>
+          <a href="#para4">Download</a>
+          <a href="#para5">Who We Are</a>
+          <a href="#contact">Register / Log In</a>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="body3">
+        <p class="para5" id="para5"><span class="bolded">Our Board</span></p>
+
+        <div class="founders-content-wrapper1">
+          <div class="content-wrapper2">
+            <img src="images/unknown.PNG" alt="Founder 1" class="founder-photo" />
+            <div class="founder-info">
+              <h3>Dr. Navdeep Grewal</h3>
+              <p>Emergency Room and Telehealth Physician in Vancouver, BC</p>
+              <p>Doctors of BC Health Promotion Award Winner for the Avaaz Podcast</p>
+            </div>
+          </div>
+
+          <div class="content-wrapper2">
+            <img src="images/unknown.png" alt="Founder 2" class="founder-photo" />
+            <div class="founder-info">
+              <h3>Dr. Madhu Jawanda</h3>
+              <p>Family Physician in Vancouver, BC</p>
+              <p>Doctors of BC Health Promotion Award Winner for the Avaaz Podcast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fade Effect -->
+      <div class="bottom-fade"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+      <div class="footer-content">
+        <a href="/privacypolicy.html">Privacy Policy</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/legal.html">Legal</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const fade = document.querySelector('.bottom-fade');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight;
+      const winHeight = window.innerHeight;
+      const scrollBottom = scrollTop + winHeight;
+      const distanceFromBottom = docHeight - scrollBottom;
+
+      fade.style.opacity = distanceFromBottom < 150 ? distanceFromBottom / 150 : 1;
+    });
+
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
