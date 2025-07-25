@@ -54,6 +54,23 @@ html {
 
 .nav-brand-text {
   padding-left: 5px;
+  color: #009ee1; /* make visited links the same color */
+  text-decoration: none;
+}
+
+.nav-brand-link {
+  color: #009ee1;
+  text-decoration: none;
+}
+
+.nav-brand-link:visited {
+  color: #009ee1;
+  text-decoration: none;
+}
+
+.nav-brand-link:hover {
+  text-decoration: underline;
+  color: #00bfff; /* optional: slightly lighter on hover */
 }
 
 .nav-logo-img {
@@ -168,6 +185,75 @@ html {
 
 .founder-info p:not(:last-child) {
   margin-bottom: 10px; /* adjust spacing as needed */
+}
+
+@media (max-width: 600px) {
+   .burger {
+    display: block;
+    color: white
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    background-color: #141414;
+    border: 2px solid #009ee1;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .nav-brand-text {
+    font-size: 60%;
+  }
+
+  .nav-logo-img {
+    size: 60%;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+
+  .para5 {
+    font-size: 32px;
+    padding: 0 15px;
+  }
+
+  /* Founders section in body3 */
+  .founders-content-wrapper1 {
+    grid-template-columns: 1fr; /* single column on mobile */
+    padding: 20px 20px;
+  }
+
+  .content-wrapper2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .founder-photo {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .founder-info h3,
+  .founder-info p {
+    text-align: center;
+  }
 }
 
 /* FADE EFFECT (BOTTOM) */
