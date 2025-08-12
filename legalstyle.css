@@ -118,7 +118,8 @@ body {
 .legalpara8,
 .legalpara9,
 .legalpara10,
-.legalpara11 {
+.legalpara11,
+.legalpara12 {
   font-size: 24px;
   padding-top: 10px;
   width: 80%;
@@ -130,7 +131,7 @@ body {
   text-align: left; /* Optional: centers the text inside */
 }
 
-.legalpara12 {
+.legalpara13 {
   font-size: 16px;
   font-style: italic;
   padding-top: 10px;
